@@ -221,7 +221,7 @@ function _selectNode(scope, item) {
           selectedRowElem = selectedElem.closest('.deni-react-treeview-item-container')
         }
       }
-      if (selectedRowElem) {
+      if (selectedRowElem && selectedRowElem.scrollIntoViewIfNeeded) {
         selectedRowElem.scrollIntoViewIfNeeded()
       }
     }
